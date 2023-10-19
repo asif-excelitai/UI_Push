@@ -220,41 +220,41 @@ class _MyloginState extends State<Mylogin> {
                                           ),
                                         ),
                                       ),
-                                      // Container(
-                                      //   height: _height * .06,
-                                      //   width: _width * .6,
-                                      //   decoration: BoxDecoration(
-                                      //     border: Border.all(
-                                      //       color: isPasswordError?Colors.red : Colors.blue,
-                                      //     ),borderRadius: BorderRadius.circular(10),
-                                      //   ),
-                                      //   child: TextFormField(
-                                      //     autovalidateMode: AutovalidateMode.onUserInteraction,
-                                      //     obscureText: true,
-                                      //     controller: _passWordController,
-                                      //     decoration: InputDecoration(
-                                      //       filled: true,
-                                      //       border: OutlineInputBorder(
-                                      //         borderSide: BorderSide.none,
-                                      //         borderRadius: BorderRadius.circular(10),
-                                      //       ),
-                                      //       hintText: "Enter Password",
-                                      //     ),
-                                      //     // validator: _validatePassword,
-                                      //     onChanged: (value){
-                                      //       // setState(() {
-                                      //       //   // isPasswordError=false;
-                                      //       //   // passwordErrorText='';
-                                      //       //
-                                      //       // });
-                                      //       _validatePassword(value);
-                                      //     },
-                                      //   ),
-                                      // ),
-                                      // isPasswordError?Text("${passwordErrorText}",style: TextStyle(color: Colors.redAccent),):SizedBox.shrink(),
-                                      // SizedBox(
-                                      //   height: 5,
-                                      // ),
+                                      Container(
+                                        height: _height * .06,
+                                        width: _width * .6,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: isPasswordError?Colors.red : Colors.blue,
+                                          ),borderRadius: BorderRadius.circular(10),
+                                        ),
+                                        child: TextFormField(
+                                          autovalidateMode: AutovalidateMode.onUserInteraction,
+                                          obscureText: true,
+                                          controller: _passWordController,
+                                          decoration: InputDecoration(
+                                            filled: true,
+                                            border: OutlineInputBorder(
+                                              borderSide: BorderSide.none,
+                                              borderRadius: BorderRadius.circular(10),
+                                            ),
+                                            hintText: "Enter Password",
+                                          ),
+                                          // validator: _validatePassword,
+                                          onChanged: (value){
+                                            // setState(() {
+                                            //   // isPasswordError=false;
+                                            //   // passwordErrorText='';
+                                            //
+                                            // });
+                                            _validatePassword(value);
+                                          },
+                                        ),
+                                      ),
+                                      isPasswordError?Text("${passwordErrorText}",style: TextStyle(color: Colors.redAccent),):SizedBox.shrink(),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
                                       Row(
                                         children: [
                                           Checkbox(
